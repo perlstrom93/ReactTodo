@@ -1,9 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
-var Timer = require('Timer');
-var Countdown = require('Countdown');
+
+var TodoApp = require('TodoApp');
 
 // Load foundation
 $(document).foundation();
@@ -12,7 +11,7 @@ $(document).foundation();
 require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
-    <p>React Boilerplate</p>,
+    <TodoApp />,
     document.getElementById('app')
 );
 
